@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+.floating {
+  position: absolute;
+  animation: float 6s ease-in-out infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.star1 {
+  top: clamp(7.5rem, 18vh, 12rem);
+  left: clamp(0.75rem, 4vw, 3rem);
+  font-size: clamp(1.25rem, 4vw, 2rem);
+}
+
+.star2 {
+  top: 250px;
+  right: 80px;
+  font-size: 2rem;
+}
+
+.code1 {
+  bottom: clamp(5rem, 16vh, 9.375rem);
+  left: clamp(0.75rem, 6vw, 5rem);
+  font-size: clamp(2rem, 8vw, 4rem);
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+.code2 {
+  bottom: clamp(4rem, 13vh, 7.5rem);
+  right: clamp(0.75rem, 7vw, 6.25rem);
+  font-size: clamp(2rem, 8vw, 4rem);
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+.dot1 {
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  width: 80px;
+  height: 80px;
+  background: rgba(56, 189, 248, 0.15);
+  border-radius: 50%;
+}
+
+.dot2 {
+  position: absolute;
+  bottom: 200px;
+  left: 250px;
+  width: 60px;
+  height: 60px;
+  background: rgba(56, 189, 248, 0.15);
+  border-radius: 50%;
+}
+.js-logo {
+  top: clamp(11.25rem, 27vh, 15rem);
+  right: clamp(0.75rem, 7vw, 7.5rem);
+  width: clamp(3.5rem, 12vw, 4.375rem);
+  height: clamp(3.5rem, 12vw, 4.375rem);
+
+  background: #f7df1e;
+  color: #000;
+
+  font-weight: bold;
+  font-size: clamp(1.25rem, 5vw, 1.8rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.ts-logo {
+  top: clamp(11.25rem, 27vh, 15rem);
+  left: clamp(0.75rem, 4vw, 3rem);
+  width: clamp(3.5rem, 12vw, 4.375rem);
+  height: clamp(3.5rem, 12vw, 4.375rem);
+
+  background: #3178c6;
+  color: white;
+
+  font-size: clamp(1.25rem, 5vw, 1.8rem);
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  box-shadow: 0 10px 25px rgba(49, 120, 198, 0.3);
+}
